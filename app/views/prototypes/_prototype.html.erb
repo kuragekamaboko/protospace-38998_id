@@ -1,0 +1,8 @@
+ <%= link_to  prototype_path(prototype.id), method: :get do %>
+<div>
+  <%= image_tag prototype.image, class: 'prototype-image'if prototype.image.attached? %>
+  <h1><%= prototype.title %></h1>
+  <p><%= prototype.catch_copy %></p>
+  <span><%= prototype.user.name %></span> 
+</div>
+<% end %>
