@@ -5,6 +5,6 @@
   <h1><%= prototype.title %></h1>
   <p><%= prototype.catch_copy %></p>
   <% end %>
-  <p><%= link_to prototype.user.name, '/users/show' %>
+  <p><%= link_to prototype.user.name, user_path(prototype.user.id) %>
 </div>
 
